@@ -1,16 +1,73 @@
+from random import randrange
+import math
+
 # Harjutus 04
 # J. Õunapuu
 # 03.02.2022
 
 
+# Pank
+
+konto = 0
+intress = 0.05
+raha = int(input("Sisestage rahasumma:  "))
+konto += raha
+
+aastad = int(input("Mitu aastat tahate raha hoiustada?: "))
+
+print(f"{'aasta':4} {'Algsumma':10} {'Intress':10} {'Aasta lõpuks':10}  ")
+
+for i in range(aastad):
+    boonus = konto * intress
+    print(f"{i+1:4} {konto:10.2f} {boonus:10.2f} {konto+boonus:10.2f}")
+    konto += boonus
+print(f"Summa kokku: {konto:.2f}")
+
+
+
+
+
+
+
 # Arvamismäng
 
+for i in range(1,2):
+    nr = (randrange(1,21))
+
+nr = 5
+loop = 1
+kordade_arv = 0
+ 
+print("Arva ära number 1-20")
+ 
+while loop == 1:
+    arva = int(input("Sisesta number: "))
+    
+    if arva == nr:
+        kordade_arv += 1
+        print("Hästi paned!")
+        loop = 0
+    elif kordade_arv >= 2:
+        loop = 0
+        if input("Kas soovid veel mängida?(J/E)") == "J":
+            loop = 1
+            kordade_arv = 0
+        else:
+            print("nägemist!")
+    elif arva < nr:
+        kordade_arv += 1
+        print("Sinu pakutud arv on liiga väike")
+   # elif arva > nr:
+   #     kordade_arv += 1
+   #     print('Sinu pakutud arv on liiga suur')
+    
+    else:
+        kordade_arv += 1
+        print("Sinu pakutud arv on liiga suur")
+        
 
 
 
-
-
-'''
 #viisikud
 
 for i in range(1,101):
@@ -70,7 +127,7 @@ for t in range(1,6):
     k = k - 1
     print("* "* k)
     
-'''
+
 
 # Jalgpalli meeskonna valimine
 
