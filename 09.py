@@ -8,9 +8,9 @@
 import datetime
 date = datetime.datetime.now()
 
-print(date.strftime("%d. February %Y"))
+print(date.strftime("%d. March %Y"))
 print()
-print(date.strftime("%d. Veebruar %Y"))
+print(date.strftime("%d. Märts %Y"))
 print()
 
 #vanuse leidmine isikukoodi abil
@@ -27,5 +27,3 @@ start_date = datetime.datetime(aasta,kuu,paev)
 end_date = datetime.datetime(int(aa),int(mm),int(dd))
 difference_in_years = relativedelta(end_date, start_date).years
 print(f"Oled {difference_in_years}. aastane")
-
-
