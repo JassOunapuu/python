@@ -6,8 +6,6 @@
 # 17. email
 import re
 
-
-#email = "jass.ounapuu@lollakas.com"
 email = input("Sisestage oma email kujul enimi.pnimi@server.com:  ")
 
 loop=0
