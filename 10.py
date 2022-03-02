@@ -20,6 +20,6 @@ with open('nonsense.txt', 'r') as fail:
 
 with open('nonsense.txt', 'r') as fail:
     for line in fail:
-        if re.findall("^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$",line):
+        if re.match("^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$",line):
             print(line,end="")
 

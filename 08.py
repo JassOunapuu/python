@@ -32,6 +32,7 @@ class auto:
         
     def lisaKiirus(self,x):
         self.kiirus = x
+        
     def kuvaKiirus(self):
         print("Kiirus: {}".format(self.kiirus))
 
